@@ -1,15 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import Basic from './Basic'
-import CompA from './CompA';
+//import Basic from './Basic'
+//import CompA from './CompA';
+import Forms from './Forms';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Basic/>
-        <CompA/>
+        <Forms/>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

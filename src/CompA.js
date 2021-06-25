@@ -18,7 +18,7 @@ class CompA extends React.Component{
         console.log(this.state.saniya)
         return(
             <div>
-                <h1>Hi saniya{this.state.saniya}</h1>
+                <h1>Hi saniya{JSON.stringify(this.state.saniya)}</h1>
             </div>
         )
     }
