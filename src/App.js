@@ -2,14 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 //import Basic from './Basic'
 //import CompA from './CompA';
-import Forms from './Forms';
+//import Forms from './Forms';
+import FocusInput from './FocusInput';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Forms/>
+        <FocusInput/>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
