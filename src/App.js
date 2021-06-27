@@ -1,33 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+//import logo from './logo.svg';
+//import './App.css';
 //import Basic from './Basic'
 //import CompA from './CompA';
 //import Forms from './Forms';
-import FocusInput from './FocusInput';
+//import FocusInput from './FocusInput';
 
-function App() {
+import "./App.css";
+import { useState } from "react";
+import ComponentB from "./ComponentB";
+import MyContext from "./MyContext";
+
+export default function App() {
+  const [myState, setMyState] = useState("Hii, I am Saniya");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <FocusInput/>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        
-        
-
-      </header>
-    </div>
+    <MyContext.Provider value={myState}>
+      <div className="App">
+        <ComponentB />
+        <button onClick={() => setMyState("Not Sania")}>Click Me</button>
+      </div>
+    </MyContext.Provider>
   );
 }
 
-export default App;
+
+
+
+
